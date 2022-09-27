@@ -1,0 +1,13 @@
+**/._*
+**/.git: false
+**/*.aux
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*.fdb_latexmk
+**/*.fls
+**/*.git
+**/*.gz
+**/*.log
+**/*.out
+**/*.toc

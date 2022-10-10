@@ -1,0 +1,119 @@
+@article{ballentineInadequacyEhrenfestTheorem1994,
+  title = {Inadequacy of {{Ehrenfest}}’s Theorem to Characterize the Classical Regime},
+  author = {Ballentine, L. E. and Yang, Yumin and Zibin, J. P.},
+  date = {1994-10-01},
+  journaltitle = {Physical Review A},
+  shortjournal = {Phys. Rev. A},
+  volume = {50},
+  number = {4},
+  pages = {2854--2859},
+  issn = {1050-2947, 1094-1622},
+  doi = {10.1103/PhysRevA.50.2854},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.50.2854},
+  urldate = {2022-09-28},
+  langid = {english},
+  file = {/home/gabo/Zotero/storage/YZZ3GFYX/Ballentine et al. - 1994 - Inadequacy of Ehrenfest’s theorem to characterize .pdf}
+}
+
+@book{ballentineQuantumMechanicsModern2010,
+  title = {Quantum Mechanics: A Modern Development},
+  shorttitle = {Quantum Mechanics},
+  author = {Ballentine, Leslie E.},
+  date = {2010},
+  edition = {repr},
+  publisher = {{World Scientific}},
+  location = {{Singapore}},
+  isbn = {978-981-02-4105-6},
+  langid = {english},
+  keywords = {2022-2},
+  file = {/home/gabo/Zotero/storage/AZKQR7KU/Ballentine - 2010 - Quantum mechanics a modern development.pdf}
+}
+
+@article{britoParticleUniformMagnetic2007,
+  title = {Particle in a Uniform Magnetic Field under the Symmetric Gauge: The Eigenfunctions and the Time Evolution of Wave Packets},
+  shorttitle = {Particle in a Uniform Magnetic Field under the Symmetric Gauge},
+  author = {de Brito, P E and Nazareno, H N},
+  date = {2007-01-01},
+  journaltitle = {European Journal of Physics},
+  shortjournal = {Eur. J. Phys.},
+  volume = {28},
+  number = {1},
+  pages = {9--21},
+  issn = {0143-0807, 1361-6404},
+  doi = {10.1088/0143-0807/28/1/002},
+  url = {https://iopscience.iop.org/article/10.1088/0143-0807/28/1/002},
+  urldate = {2020-09-06},
+  issue = {1},
+  keywords = {IntroInvestigación},
+  file = {/home/gabo/Zotero/storage/S3LGI6K5/Brito and Nazareno - 2007 - Particle in a uniform magnetic field under the sym.pdf}
+}
+
+@book{feynmanFeynmanLecturesPhysics2011,
+  title = {The {{Feynman Lectures}} on {{Physics}}. {{Vol III}}: {{Quantum Mechanics}}},
+  author = {Feynman, Richard P. and Leighton, Robert B. and Sands, Matthew L.},
+  date = {2011},
+  edition = {New millennium ed},
+  publisher = {{Basic Books}},
+  location = {{New York}},
+  isbn = {978-0-465-02414-8 978-0-465-02493-3 978-0-465-02416-2 978-0-465-02417-9 978-0-465-02501-5 978-0-465-02382-0},
+  pagetotal = {3},
+  keywords = {Electromagnetism,Mechanics,Physics,Quantum theory,Radiation,Thermodynamics},
+  annotation = {OCLC: ocn671704374},
+  file = {/home/gabo/Zotero/storage/SUYDD8RA/Feynman et al. - 2011 - The Feynman Lectures on Physics. Vol III Quantum .pdf}
+}
+
+@book{landauQuantumMechanicsNonrelativistic1977,
+  title = {Quantum mechanics: non-relativistic theory},
+  shorttitle = {Quantum mechanics},
+  author = {Landau, L. D. and Lifshits, E. M. and Landau, L. D.},
+  date = {1977},
+  series = {Their Course of theoretical physics},
+  edition = {3d ed., rev. and enl},
+  number = {v. 3},
+  publisher = {{Pergamon Press}},
+  location = {{Oxford ; New York}},
+  isbn = {978-0-08-020940-1},
+  langid = {engrus},
+  keywords = {Nonrelativistic quantum mechanics},
+  file = {/home/gabo/Zotero/storage/ZGEXBULC/Landau et al. - 1977 - Quantum mechanics non-relativistic theory.pdf}
+}
+
+@article{manfrediQuantumSystemsThat1993,
+  title = {Quantum Systems That Follow Classical Dynamics},
+  author = {Manfredi, G and Mola, S and Feix, M R},
+  date = {1993-05},
+  journaltitle = {European Journal of Physics},
+  volume = {14},
+  number = {3},
+  pages = {101--107},
+  issn = {0143-0807, 1361-6404},
+  doi = {10.1088/0143-0807/14/3/002},
+  url = {https://iopscience.iop.org/article/10.1088/0143-0807/14/3/002},
+  urldate = {2022-09-02},
+  abstract = {For a special class of potentials,'the dynamical evolution of any quantum wavepacket is entirely determined by the laws of classical mechanics. Here, the properties of this class are investigated both from the viewpoint of the Ehrenfest theorem (which provides the evolution of the average position and momentum), and the Wigner representation (which expresses quantum mechanics in a phase space formalism). Finally, these results are extended to the case of a charged particle in a uniform magnetic field.},
+  file = {/home/gabo/Zotero/storage/IFKPGZ67/Manfredi et al. - 1993 - Quantum systems that follow classical dynamics.pdf}
+}
+
+@unpublished{sandovalPreproyecto,
+  title = {Preproyecto},
+  author = {Sandoval, Gabriel},
+  abstract = {Particle in a uniform magnetic field: an example of classical behaviour of classical systems},
+  file = {/home/gabo/Zotero/storage/CZZHURYZ/Sandoval - Preproyecto.pdf}
+}
+
+@book{tetaMathematicalPrimerQuantum2018,
+  title = {A {{Mathematical Primer}} on {{Quantum Mechanics}}},
+  author = {Teta, Alessandro},
+  date = {2018},
+  series = {{{UNITEXT}} for {{Physics}}},
+  publisher = {{Springer International Publishing}},
+  location = {{Cham}},
+  doi = {10.1007/978-3-319-77893-8},
+  url = {http://link.springer.com/10.1007/978-3-319-77893-8},
+  urldate = {2020-08-29},
+  isbn = {978-3-319-77892-1 978-3-319-77893-8},
+  langid = {english},
+  file = {/home/gabo/Zotero/storage/W7TEFCEU/Teta - 2018 - A Mathematical Primer on Quantum Mechanics.pdf}
+}
+
+

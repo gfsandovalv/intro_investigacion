@@ -1,5 +1,5 @@
 \usepackage{biblatex}
-\addbibresource{referencias.bib}
+\addbibresource{references.biblatex}
 
 \usepackage{hyperref}
 \usepackage[english]{babel}
@@ -28,5 +28,11 @@
 \renewcommand{\d}{\text d}
 \newcommand{\dd}[2]{\frac{\d #1}{\d #2}}
 \newcommand{\ddp}[2]{\frac{\partial #1}{\partial #2}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\boldtitle}[1]{\title{\fontsize{24pt}{10pt}\selectfont\textbf{#1}}}
 \newcommand{\mean}[1]{\left\langle #1 \right\rangle}
+\newcommand{\comm}[2]{\left[#1, #2\right]}
+
+\DeclareRobustCommand*{\secref}[1]{(Section \ref{#1})}
+\DeclareRobustCommand*{\figref}[1]{(Figure \ref{#1})}
+\DeclareRobustCommand*{\tabref}[1]{(Table \ref{#1})}

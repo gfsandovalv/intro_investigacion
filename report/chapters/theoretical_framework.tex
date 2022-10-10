@@ -1,0 +1,114 @@
+\chapter{Theoretical framework}
+
+\section{Ehrenfest's Theorem}
+
+Equations of motion in the Heisenberg pictures are (\cite{ballentineQuantumMechanicsModern2010})
+\begin{align}
+    \dd{Q}{t} &= \dfrac{i}{\hbar} \comm{H}{Q} = \dfrac{P}{M} \label{eq:eq_of_motion_Q}\\
+    \dd{P}{t} &= \dfrac{i}{\hbar} \comm{H}{P} = F(Q) \label{eq:eq_of_motion_P}
+\end{align}
+where $F(Q) = -\ddp{V}{Q}$ is the force operator. 
+Taking the averages values with respect to some state, 
+
+\begin{align}
+    \dd{\mean Q}{t} &= \dfrac{\mean P}{M} \\
+    \dd{\mean P}{t} &= \mean {F(Q)} \label{eq:Ehrenfest_force}
+\end{align}
+
+The desired characteristic for this force, 
+
+\begin{equation}
+    \mean {F(Q)} \approx F(\mean Q) 
+\end{equation}
+
+So that the equation \eqref{eq:Ehrenfest_force} is self-contained \cite{manfrediQuantumSystemsThat1993}.
+
+\section{Corrections to Ehrenfest Theorem}
+\label{sec:Ehrenfest_corrections}
+Let the deviation operators be defined as follows
+
+\begin{align}
+    \delta Q = Q - \mean Q\\
+    \delta P = P - \mean P
+\end{align}
+
+Expanding equations \eqref{eq:eq_of_motion_Q} and \eqref{eq:eq_of_motion_P} around these deviation operators and averaging, relation \eqref{eq:eq_of_motion_Q} is recovered, and in place of \eqref{eq:eq_of_motion_P} now the relation reads
+
+\begin{equation}
+    \dd{p_0}{t} = F(q_0) + \dfrac{1}{2}\mean{(\delta Q)}\ddp{^2}{q_0^2} + ...
+\end{equation}
+
+where the substitutions $q_0 = \mean Q$ and $p_0 = \mean P$ are used. Any term beyond the first one are corrections to Ehrenfest's theorem.
+
+The meaning of these terms can be understood by comparing a similar procedure for a classical ensemble. 
+
+Let say that a classical ensemble is described by the probability density in phase space $\rho_c(q, p, t)$ which satisfies the Liouville equation,
+
+\begin{equation}
+    \left\{\ddp{}{t} + \dot q \ddp{}{q} + \dot p \ddp{}{p}\right\}\rho_c(q, p, t) = 0 
+\end{equation}
+
+The classical averages for an observable $A$ is give as follows
+
+\begin{equation}
+    A_c = \int \d{q}\,\d{p} \,\left\{A(q,p)\rho_c(q, p, t)\right \}
+\end{equation}
+
+According to this, it is found for $q_c$ and $p_c$
+
+\begin{align}
+    \dd{q_c}{t} &= \dfrac{p_c}{m} \\
+    \dd{p_c}{t} &= \int \d{q}\,\d{p} \,\left\{F(q)\rho_c(q, p, t)\right \} \label{eq:classical_force}
+\end{align}
+Similarly, expanding equation \eqref{eq:classical_force} around $\delta q = q - q_c$, it is found 
+
+\begin{equation}
+    \dd{p_c}{t} = F(q_c) + \dfrac{1}{2}\mean{(\delta Q)}_c\ddp{^2}{q_c^2} + ...
+\end{equation}
+
+\section{Quantum Hamilton-Jacobi Equation}
+\label{sec:QHJ} 
+Separating an arbitrary wave equation into a real amplitude $A$ and a purely imaginary number with a phase $S$ leads to
+
+\begin{equation}    
+    \Psi(\vec x, t) = A(\vec x, t)e^{iS(\vec x, t)/\hbar}
+\end{equation}
+
+Replacing into the time-dependent Schrödinger equation, separating real and imaginary parts gives
+
+\begin{align}
+    -\dfrac{\hbar^2}{2M}\nabla^2 A - \dfrac{1}{2M}A(\vec\nabla S)^2 + VA &= -A\ddp{S}{t} \label{eq:state_phase_eq}\\
+    -\dfrac{1}{2M}\left\{A\nabla^2 S + 2 (\nabla A)\cdot(\nabla S)\right\} &= \ddp{A}{t} \label{eq:state_amplitude_eq}
+\end{align}
+Where $V$ is the potential function.
+Equation \eqref{eq:state_amplitude_eq} can be rewritten in a convenient form,
+
+\begin{equation}
+    \ddp{P}{t} + \dfrac{\nabla(P\nabla S)}{M} = 0
+\end{equation}
+
+Where the fact that the probability $P = A^2$. The equation represents a continuity equation for the probability, so it is conserved as the system evolves. 
+
+On the other hand, equation \eqref{eq:state_phase_eq} is found to be
+
+\begin{equation}
+    \ddp{S}{t} + \dfrac{(\nabla S)^2}{2M} + V + V_Q = 0
+    \label{eq:}
+\end{equation}
+which haves the form of a Hamilton-Jacobi equation and will be referred as Quantum Hamilton-Jacobi equation (QHJ). Here, $V_Q$ is called quantum potential and is defined as 
+
+\begin{equation}
+    V_Q = -\dfrac{\hbar^2}{2M}\dfrac{(\nabla^2 A)}{A}
+\end{equation}
+
+\section{Wigner Representation}
+\label{sec:Wigner_representation}
+
+\begin{equation}
+    W(x, p, t) = \dfrac{1}{2\pi\hbar} \int \left\{\d\xi\,\exp{\left(\dfrac{i p\xi}{\hbar}\right)} \Psi^*\left(x + \dfrac{\xi}{2}, t\right) \Psi\left(x - \dfrac{\xi}{2}, t\right)\right\}
+\end{equation}
+
+This satisfies 
+\begin{equation}
+    \ddp{W}{t} + \dfrac{p}{m}\ddp{W}{x} = \dfrac{i}{2\pi\hbar^2} \int\d\lambda\d p^\prime \left\{\exp{\left(\dfrac{i \lambda}{\hbar}(p-p^\prime)\right)}\left[V\left(x-\dfrac{\lambda}{2}\right) - V\left(x-\dfrac{\lambda}{2}\right)\right]W(x, p^\prime, t)\right\}
+\end{equation}

@@ -1,0 +1,128 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3896,        118]
+NotebookOptionsPosition[      3014,         95]
+NotebookOutlinePosition[      3416,        111]
+CellTagsIndexPosition[      3373,        108]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"na", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"1", "/", "2"}], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Px", "^", "2"}], "+", 
+       RowBox[{"Py", "^", "2"}], "+", 
+       RowBox[{
+        RowBox[{"1", "/", "4"}], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"X", "^", "2"}], "+", 
+          RowBox[{"Y", "^", "2"}]}], ")"}]}], "-", 
+       RowBox[{"X", " ", "Py"}], "+", 
+       RowBox[{"Y", " ", "Px"}]}], ")"}]}], "-", 
+    RowBox[{"1", "/", "2"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.874611506311041*^9, 3.874611506426776*^9}, {
+   3.8746115692417727`*^9, 3.8746116529913597`*^9}, 3.87461177828337*^9},
+ CellLabel->"In[3]:=",ExpressionUUID->"100c30d6-a952-476c-8f92-c8b5a3e5ef11"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"H", "=", 
+   RowBox[{"\[HBar]", " ", "\[Omega]", 
+    RowBox[{"(", " ", 
+     RowBox[{"na", "+", 
+      RowBox[{"1", "/", "2"}]}], ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8746117221953163`*^9, 3.8746117811874237`*^9}, {
+  3.874611977708569*^9, 3.874612004083078*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"aa8835fb-e826-4954-963d-b0e7c5a0ace6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.874612006437714*^9, 
+  3.874612010873879*^9}},ExpressionUUID->"01d781bc-b53e-42e9-8d9a-\
+113730c834ee"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    SuperscriptBox["Px", "2"], "+", 
+    SuperscriptBox["Py", "2"], "-", 
+    RowBox[{"Py", " ", "X"}], "+", 
+    RowBox[{"Px", " ", "Y"}], "+", 
+    RowBox[{
+     FractionBox["1", "4"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["X", "2"], "+", 
+       SuperscriptBox["Y", "2"]}], ")"}]}]}], ")"}], " ", "\[Omega]", " ", 
+  "\[HBar]"}]], "Output",
+ CellChangeTimes->{3.874612006864731*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"dcd74d7c-561b-44d4-b90d-7eddb5a7ed51"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8746117833483562`*^9, 3.87461178892445*^9}, {
+  3.874611890216254*^9, 3.874611909024536*^9}, {3.874611990017811*^9, 
+  3.8746119969649057`*^9}},ExpressionUUID->"c8104c18-a70e-4f5d-84b8-\
+f5c32d6bb692"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.8746117850170107`*^9, 3.874611789307728*^9}, {
+   3.8746118950366488`*^9, 3.874611909355577*^9}, 3.8746119825001707`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"5eda8263-eab9-42c0-b76f-683b3848e5a1"]
+}, Open  ]]
+},
+WindowSize->{754.5, 323.25},
+WindowMargins->{{129.75, Automatic}, {Automatic, 80.25}},
+FrontEndVersion->"13.1 for Linux x86 (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f0301415-e9df-4522-893d-6c2498e3f10d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 754, 21, 33, "Input",ExpressionUUID->"100c30d6-a952-476c-8f92-c8b5a3e5ef11"],
+Cell[1315, 43, 391, 9, 33, "Input",ExpressionUUID->"aa8835fb-e826-4954-963d-b0e7c5a0ace6"],
+Cell[CellGroupData[{
+Cell[1731, 56, 152, 3, 29, "Input",ExpressionUUID->"01d781bc-b53e-42e9-8d9a-113730c834ee"],
+Cell[1886, 61, 571, 17, 47, "Output",ExpressionUUID->"dcd74d7c-561b-44d4-b90d-7eddb5a7ed51"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2494, 83, 250, 4, 29, "Input",ExpressionUUID->"c8104c18-a70e-4f5d-84b8-f5c32d6bb692"],
+Cell[2747, 89, 251, 3, 33, "Output",ExpressionUUID->"5eda8263-eab9-42c0-b76f-683b3848e5a1"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

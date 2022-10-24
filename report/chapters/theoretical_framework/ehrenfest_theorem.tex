@@ -1,0 +1,84 @@
+\section{Ehrenfest's Theorem}
+
+Equations of motion in the Heisenberg pictures are given by
+\begin{align}
+    \dd{Q}{t} &= \dfrac{i}{\hbar} \comm{H}{Q} = \dfrac{P}{M} \label{eq:eq_of_motion_Q}\\
+    \dd{P}{t} &= \dfrac{i}{\hbar} \comm{H}{P} = F(Q) \label{eq:eq_of_motion_P}
+\end{align}
+where $F(Q) = -\ddp{V}{Q}$ is the force operator.
+Taking the averages values with respect to some state,
+
+\begin{align}
+    \dd{\mean Q}{t} &= \dfrac{\mean P}{M} \label{eq:Ehrenfest_velocity}\\
+    \dd{\mean P}{t} &= \mean {F(Q)} \label{eq:Ehrenfest_force_0}
+\end{align}
+
+The equation \eqref{eq:Ehrenfest_force_0} is meaningless\footnote{As a dynamical equation, because it does not 'predict' the evolution of the system} since the average value $\mean{\cdot} = \mean{\cdot}_{\Psi}$ requires the information of the entire wave function of the system $\Psi$ in order to be calculated. Only for a special case this situation can be avoided.
+
+If the force term satisfies
+ \begin{equation}
+    \mean {F(Q)} \approx F(\mean Q)\label{eq:Ehrenfest_classical_condition}
+ \end{equation}
+the equation \eqref{eq:Ehrenfest_force_0} can be replaced by
+
+\begin{equation}
+    \dd{\mean P}{t} = F(\mean {Q})\label{eq:Ehrenfest_force}
+\end{equation}
+
+The equations \eqref{eq:Ehrenfest_velocity} and \eqref{eq:Ehrenfest_force} mean that the quantities $\mean Q$ and $\mean P$ follow classical equations of motion. \cite{ballentineQuantumMechanicsModern2010}
+
+In particular, the condition \eqref{eq:Ehrenfest_classical_condition} is identically fulfilled if the force operator is a linear form. This is, the general form of $V$ is given by
+
+\begin{equation}
+    V(Q, t) = a(t) + b(t)Q + c(t)Q^2
+\end{equation}
+
+and hence, the mean value of the force $\mean F = \mean {-\ddp{V}{Q}} \propto \mean{Q}$ which can be calculated without having information of the wave equation. \cite{manfrediQuantumSystemsThat1993}.
+
+
+If the width of the position probability distribution is small compared to the typical length scale over which the force varies, then the centroid of the quantum-mechanical probability distribution will follow a classical trajectory. \alert{Copied explicitly from reference. Conection to 'ensembles' is required}
+
+
+\section{Corrections to Ehrenfest Theorem}
+
+\label{sec:Ehrenfest_corrections}
+Let the deviation operators be defined as follows
+
+\begin{align}
+    \delta Q = Q - \mean Q\\
+    \delta P = P - \mean P
+\end{align}
+
+Expanding equations \eqref{eq:eq_of_motion_Q} and \eqref{eq:eq_of_motion_P} around these deviation operators and averaging, relation \eqref{eq:eq_of_motion_Q} is recovered, and in place of \eqref{eq:eq_of_motion_P} now the relation reads
+
+\begin{equation}
+    \dd{p_0}{t} = F(q_0) + \dfrac{1}{2}\mean{(\delta Q)}\ddp{^2}{q_0^2} + ...
+\end{equation}
+
+where the substitutions $q_0 = \mean Q$ and $p_0 = \mean P$ are used. Any term beyond the first one are corrections to Ehrenfest's theorem.
+
+The meaning of these terms can be understood by comparing a similar procedure for a classical ensemble.
+
+Let say that a classical ensemble is described by the probability density in phase space $\rho_c(q, p, t)$ which satisfies the Liouville equation,
+
+\begin{equation}
+    \left\{\ddp{}{t} + \dot q \ddp{}{q} + \dot p \ddp{}{p}\right\}\rho_c(q, p, t) = 0
+\end{equation}
+
+The classical averages for an observable $A$ is give as follows
+
+\begin{equation}
+    A_c = \int \d{q}\,\d{p} \,\left\{A(q,p)\rho_c(q, p, t)\right \}
+\end{equation}
+
+According to this, it is found for $q_c$ and $p_c$
+
+\begin{align}
+    \dd{q_c}{t} &= \dfrac{p_c}{m} \\
+    \dd{p_c}{t} &= \int \d{q}\,\d{p} \,\left\{F(q)\rho_c(q, p, t)\right \} \label{eq:classical_force}
+\end{align}
+Similarly, expanding equation \eqref{eq:classical_force} around $\delta q = q - q_c$, it is found
+
+\begin{equation}
+    \dd{p_c}{t} = F(q_c) + \dfrac{1}{2}\mean{(\delta Q)}_c\ddp{^2}{q_c^2} + ...
+\end{equation}

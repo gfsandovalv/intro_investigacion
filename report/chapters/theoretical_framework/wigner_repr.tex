@@ -1,0 +1,11 @@
+\section{Wigner Representation}
+\label{sec:Wigner_representation}
+
+\begin{equation}
+    W(x, p, t) = \dfrac{1}{2\pi\hbar} \int \left\{\d\xi\,\exp{\left(\dfrac{i p\xi}{\hbar}\right)} \Psi^*\left(x + \dfrac{\xi}{2}, t\right) \Psi\left(x - \dfrac{\xi}{2}, t\right)\right\}
+\end{equation}
+
+This satisfies
+\begin{equation}
+    \ddp{W}{t} + \dfrac{p}{m}\ddp{W}{x} = \dfrac{i}{2\pi\hbar^2} \int\d\lambda\d p^\prime \left\{\exp{\left(\dfrac{i \lambda}{\hbar}(p-p^\prime)\right)}\left[V\left(x-\dfrac{\lambda}{2}\right) - V\left(x-\dfrac{\lambda}{2}\right)\right]W(x, p^\prime, t)\right\}
+\end{equation}

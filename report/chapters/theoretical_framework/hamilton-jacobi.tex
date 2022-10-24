@@ -1,0 +1,34 @@
+\section{Quantum Hamilton-Jacobi Equation}
+\label{sec:QHJ}
+Separating an arbitrary wave equation into a real amplitude $A$ and a purely imaginary number with a phase $S$ leads to
+
+\begin{equation}
+    \Psi(\vec x, t) = A(\vec x, t)e^{iS(\vec x, t)/\hbar}
+\end{equation}
+
+Replacing into the time-dependent Schrödinger equation, separating real and imaginary parts gives
+
+\begin{align}
+    -\dfrac{\hbar^2}{2M}\nabla^2 A - \dfrac{1}{2M}A(\vec\nabla S)^2 + VA &= -A\ddp{S}{t} \label{eq:state_phase_eq}\\
+    -\dfrac{1}{2M}\left\{A\nabla^2 S + 2 (\nabla A)\cdot(\nabla S)\right\} &= \ddp{A}{t} \label{eq:state_amplitude_eq}
+\end{align}
+Where $V$ is the potential function.
+Equation \eqref{eq:state_amplitude_eq} can be rewritten in a convenient form,
+
+\begin{equation}
+    \ddp{P}{t} + \dfrac{\nabla(P\nabla S)}{M} = 0
+\end{equation}
+
+Where the fact that the probability $P = A^2$. The equation represents a continuity equation for the probability, so it is conserved as the system evolves.
+
+On the other hand, equation \eqref{eq:state_phase_eq} is found to be
+
+\begin{equation}
+    \ddp{S}{t} + \dfrac{(\nabla S)^2}{2M} + V + V_Q = 0
+    \label{eq:}
+\end{equation}
+which haves the form of a Hamilton-Jacobi equation and will be referred as Quantum Hamilton-Jacobi equation (QHJ). Here, $V_Q$ is called quantum potential and is defined as
+
+\begin{equation}
+    V_Q = -\dfrac{\hbar^2}{2M}\dfrac{(\nabla^2 A)}{A}
+\end{equation}
